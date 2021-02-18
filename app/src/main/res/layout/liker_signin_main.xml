@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4.5" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></Space>
+
+                <ImageView
+                    android:id="@+id/imageView_Logo_Liker"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.6"
+                    android:src="@drawable/liker_logo" />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.92"
+                    android:background="@drawable/txtbox_shape">
+
+                    <ImageView
+                        android:id="@+id/imageView_username"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/user1_navy" />
+
+                    <EditText
+                        android:id="@+id/EditText_username"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/imageView_username"
+                        android:backgroundTint="@color/colorNavyLiker"
+                        android:ems="10"
+                        android:fontFamily="@font/regular"
+                        android:hint="username"
+                        android:inputType="textPersonName|textNoSuggestions"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorNavyLiker"
+                        android:textColorHint="@color/colorNavyLiker"
+                        android:textSize="20dp" />
+
+                </RelativeLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1" />
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/RelativeLayout_username"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.92"
+                    android:background="@drawable/txtbox_shape">
+
+                    <ImageView
+                        android:id="@+id/imageView_password"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/password_navy" />
+
+                    <EditText
+                        android:id="@+id/EditText_password"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/imageView_password"
+                        android:backgroundTint="@color/colorNavyLiker"
+                        android:ems="10"
+                        android:fontFamily="@font/regular"
+                        android:hint="password"
+                        android:inputType="textPassword|textNoSuggestions"
+                        android:textColor="@color/colorNavyLiker"
+                        android:textColorHint="@color/colorNavyLiker"
+                        android:textSize="20dp" />
+
+                </RelativeLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1" />
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.95"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/Button_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/login_btn_ani"
+                        android:fontFamily="@font/bold"
+                        android:text="Log-in"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="match_parent"
+                android:layout_height="5px"
+                android:layout_below="@id/Button_login"
+                android:background="@color/colorNavyLiker" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/TextView_forgot"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:fontFamily="@font/light"
+                    android:text="Forgot Password?"
+                    android:textColor="@color/colorNavyLiker"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/TextView_forgotpwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:clickable="true"
+                    android:fontFamily="@font/semibold"
+                    android:text="Click HERE"
+                    android:textColor="@color/colorNavyLiker"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2.2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/TextView_creat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:fontFamily="@font/light"
+                    android:text="Creat Account?"
+                    android:textColor="@color/colorNavyLiker"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/TextView_creataccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:clickable="true"
+                    android:fontFamily="@font/semibold"
+                    android:text="Click HERE"
+                    android:textColor="@color/colorNavyLiker"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></Space>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4.5" />
+
+</LinearLayout>

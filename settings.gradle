@@ -1,0 +1,2 @@
+include ':app', ':polar-ble-sdk'
+rootProject.name='Liker_0204'

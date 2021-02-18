@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popup"
+    android:layout_width="350dp"
+    android:layout_height="300dp"
+    android:layout_weight="1"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5">
+
+    </Space>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5">
+
+            </Space>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                </Space>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:text="Password"
+                        android:textColor="@color/colorNavyLiker"></TextView>
+
+                    <EditText
+                        android:id="@+id/editText_change_current_pwd"
+                        android:inputType="textPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/colorNavyLiker"
+                        android:textColor="@color/colorNavyLiker">
+
+                    </EditText>
+
+                </LinearLayout>
+
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                </Space>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_change_submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_btn_ani"
+                        android:text="Submit"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp">
+
+                    </Button>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.9">
+
+                    </Space>
+
+                    <Button
+                        android:id="@+id/button_change_cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/sensor_btn_ani"
+                        android:text="Cancel"
+                        android:textSize="15sp">
+
+                    </Button>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5">
+
+            </Space>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5">
+
+    </Space>
+
+</LinearLayout>

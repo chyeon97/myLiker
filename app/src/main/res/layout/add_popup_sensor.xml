@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popup"
+    android:layout_width="350dp"
+    android:layout_height="300dp"
+    android:layout_weight="1"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4.5"></Space>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5">
+
+            </Space>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4.5">
+                    </Space>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4.5">
+                    </Space>
+
+                    <TextView
+                        android:id="@+id/textView_sensor_add_sensorname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:text="Sensor Name"
+                        android:textColor="@color/colorNavyLiker"></TextView>
+
+                    <EditText
+                        android:id="@+id/editText_sensor_add_sensorname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/colorNavyLiker"
+                        android:textColor="@color/colorNavyLiker">
+
+                    </EditText>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_sensor_add_macaddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:text="mac address"
+                        android:textColor="@color/colorNavyLiker"></TextView>
+
+                    <TextView
+                        android:id="@+id/mac_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/colorNavyLiker"
+                        android:text="AA:AA:AA:AA"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="bottom"
+                        android:textSize="20dp"
+                        >
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_sensor_add_submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_btn_ani"
+                        android:text="Submit"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp">
+
+                    </Button>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.9">
+
+                    </Space>
+
+                    <Button
+                        android:id="@+id/button_sensor_add_cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/sensor_btn_ani"
+                        android:text="Cancel"
+                        android:textSize="15sp">
+
+                    </Button>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5">
+
+            </Space>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4.5">
+    </Space>
+
+</LinearLayout>

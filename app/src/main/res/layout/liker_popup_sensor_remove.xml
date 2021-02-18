@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:ignore="MissingDefaultResource">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4.5">
+
+    </Space>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5"
+                >
+
+            </Space>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_sensor_remove_remove"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="center_vertical"
+                        android:text="Remove"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorNavyLiker"></TextView>
+
+                    <TextView
+                        android:id="@+id/textView_sensor_remove_confirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:text="Do you want to remove"
+                        android:textColor="#404042"
+                        android:textSize="18sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/pop_senssorname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:textColor="#404042"
+                        android:textSize="18sp"
+                       />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_sensor_remove_remove"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_btn_ani"
+                        android:text="Remove"
+                        android:textSize="15sp"
+                        android:textColor="#ffffff"
+                        >
+
+                    </Button>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.9"
+                        >
+
+                    </Space>
+
+                    <Button
+                        android:id="@+id/button_sensor_remove_cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/sensor_btn_ani"
+                        android:text="Cancel"
+                        android:textSize="15sp"
+                        >
+
+                    </Button>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5"
+                >
+
+            </Space>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4.5">
+
+    </Space>
+
+</LinearLayout>

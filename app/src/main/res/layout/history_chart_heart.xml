@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/history_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="#ffff"
+    android:orientation="horizontal">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4.5">
+
+    </Space>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.3">
+
+        </Space>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="2.3">
+
+
+            <EditText
+                android:id="@+id/editText_start_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:textColor="@color/colorNavyLiker"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:hint="YYYY-MM-DD"
+                android:backgroundTint="@color/colorNavyLiker"
+                android:textColorHint="@color/colorNavyLiker"
+                >
+
+            </EditText>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5">
+
+            </Space>
+
+            <EditText
+                android:id="@+id/editText_end_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:textColor="@color/colorNavyLiker"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:hint="YYYY-MM-DD"
+                android:backgroundTint="@color/colorNavyLiker"
+                android:textColorHint="@color/colorNavyLiker"
+
+                >
+
+            </EditText>
+
+            <Button
+                android:id="@+id/button_history_heart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/login_btn_ani"
+                android:text="Search"
+                android:textStyle="bold"
+                >
+
+
+            </Button>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_history_heart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.3"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorNavyLiker">
+
+        </TextView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/colorLightGrayLiker"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5">
+
+                </Space>
+
+                <lecho.lib.hellocharts.view.LineChartView
+                    android:id="@+id/chart_heart_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5">
+
+                </Space>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.2">
+
+        </Space>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4.5">
+
+    </Space>
+
+
+</LinearLayout>
